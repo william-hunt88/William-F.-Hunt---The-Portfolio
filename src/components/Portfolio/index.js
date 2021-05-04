@@ -1,22 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
+import Project from "../Project";
 
 function Portfolio() {
+  const [projects] = useState([
+    {
+      name: "Advance-it",
+      link: "https://shrouded-beach-19084.herokuapp.com/",
+    },
+  ]);
+
+  const [currentProject, setCurrentProject] = useState(projects[0]);
+
   return (
-    <section class="my-work" id="my-work">
-      <h2 class="section-title"> My Work: </h2>
-      <div class="my-work-wrapper">
-        <div class="my-work-container">
-          <div class="grid-item box1">
-            <span>
-              <a href="https://shrouded-beach-19084.herokuapp.com/"></a>
-            </span>
-          </div>
-          <div class="grid-item box2"></div>
-          <div class="grid-item box3"></div>
-          <div class="grid-item box4"></div>
-          <div class="grid-item box5"></div>
-        </div>
-      </div>
+    <section className="my-work" id="my-work">
+      <h2 className="section-title"> My Work: </h2>
+      {projects.map((project) => {
+        <li>
+          <Project
+            currentProject={currentProject}
+          ></Project>
+        </li>;
+      })}
     </section>
   );
 }
