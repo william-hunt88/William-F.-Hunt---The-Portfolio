@@ -2,12 +2,6 @@ import React from "react";
 
 function Nav() {
   return (
-    <header>
-      <h2>
-        <a href="/">
-          <span>William Felix Hunt</span>
-        </a>
-      </h2>
       <nav>
         <ul>
           <li>
@@ -24,7 +18,6 @@ function Nav() {
           </li>
         </ul>
       </nav>
-    </header>
   );
 }
 

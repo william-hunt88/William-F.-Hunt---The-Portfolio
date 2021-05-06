@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Project({currentProject, setCurrentProject}) {
+function Project({currentProject}) {
     console.log(currentProject)
     return (
         <span> {currentProject.name} </span>
-        
     )
 }
 
