@@ -49,15 +49,6 @@ function App() {
       <main>
         <div className="content-wrap">
           {handleRender()}
-          {/* {!contactSelected ? (
-            <>
-              <div>
-                <About></About>
-              </div>
-            </>
-          ) : (
-            <ContactForm></ContactForm>
-          )} */}
         </div>
       </main>
       <Footer></Footer>
