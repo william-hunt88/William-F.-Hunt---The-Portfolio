@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+.footer {
+  bottom: 0;
+  position: fixed
+
+}
+
+.about {
+  padding: 25px
+}
+
   /* my work styles*/
 
 
@@ -15,7 +25,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
     grid-gap: 20px;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
     z-index: 9999;
     max-width: 100vw;
@@ -23,9 +33,13 @@
 }
 
 .grid-item {
-  background: rgba(150, 214, 144, 0.966);
   border: solid;
+  background-image: url("./assets/images/crypto.jpg");
+  background-position: center;
+  background-size: cover;
 }
+
+
 
 .grid-item:hover {
     opacity: .5;

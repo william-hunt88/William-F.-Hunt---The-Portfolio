@@ -1,9 +1,8 @@
 import React from "react";
 
-function Project({ currentProject }) {
-  console.log(currentProject.boxNum);
+function Project() {
   return (
-      <img className="box-image" src={require(`../../assets/images/box6.jpg`).default}></img>
+    <div></div>
   );
 }
 

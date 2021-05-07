@@ -24,7 +24,7 @@ function Header(props) {
           <a className="nav-item nav-link active" href="#about">
             About Me <span className="sr-only">(current)</span>
           </a>
-          <a className="nav-item nav-link" href="#my-work">
+          <a className="nav-item nav-link" href="#my-work" onClick = {() => props.setPortfolioSelected(true) && props.setContactSelected(false)}>
             My Work
           </a>
           <a className="nav-item nav-link" href="#contact-form" onClick = {() => props.setContactSelected(true)}>

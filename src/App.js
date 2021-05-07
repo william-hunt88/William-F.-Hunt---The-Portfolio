@@ -8,23 +8,33 @@ import ContactForm from "./components/Contact";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
+  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <div>
       <Header
         setContactSelected={setContactSelected}
         contactSelected={contactSelected}
+        setPortfolioSelected={setPortfolioSelected}
       ></Header>
       <main>
         <div className="content-wrap">
           {!contactSelected ? (
             <>
-              <Portfolio></Portfolio>
+              <div>
+                {portfolioSelected ? (
+                  <Portfolio></Portfolio>
+                ) : (
+                  <About></About>
+                )}
+              </div>
             </>
           ) : (
             <ContactForm></ContactForm>
           )}
         </div>
+
         <Footer></Footer>
       </main>
     </div>
