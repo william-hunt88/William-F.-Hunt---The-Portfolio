@@ -11,33 +11,33 @@ function App() {
   const [portfolioSelected, setPortfolioSelected] = useState(false);
 
   const handleRender = () => {
-    console.log("here")
+    console.log("here");
     if (portfolioSelected) {
       return (
         <div>
           <Portfolio></Portfolio>
         </div>
       );
-    } else if(contactSelected) {
+    } else if (contactSelected) {
       return (
         <div>
           <ContactForm></ContactForm>
         </div>
-      )
+      );
     } else {
       return (
         <div>
           <About></About>
         </div>
-      )
+      );
     }
   };
 
   useEffect(() => {
-    handleRender()
-    console.log(contactSelected)
-    console.log(portfolioSelected)
-  })
+    handleRender();
+    console.log(contactSelected);
+    console.log(portfolioSelected);
+  });
 
   return (
     <div>
@@ -59,10 +59,10 @@ function App() {
             <ContactForm></ContactForm>
           )} */}
         </div>
-
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
     </div>
+    
   );
 }
 

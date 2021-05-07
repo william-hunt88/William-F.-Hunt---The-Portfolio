@@ -19,13 +19,13 @@ function Header(props) {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#about">
-            About Me <span className="sr-only">(current)</span>
+          <a className="nav-item nav-link active" href="#about" onClick = {() => props.setPortfolioSelected(false) & props.setContactSelected(false)}>
+            About Me <span className="sr-only"></span>
           </a>
-          <a className="nav-item nav-link" href="#my-work" onClick = {() => props.setPortfolioSelected(true) && props.setContactSelected(false)}>
+          <a className="nav-item nav-link" href="#my-work" onClick = {() => props.setPortfolioSelected(true) & props.setContactSelected(false)}>
             My Work
           </a>
-          <a className="nav-item nav-link" href="#contact-form" onClick = {() => props.setContactSelected(true) && props.setPortfolioSelected(false)}>
+          <a className="nav-item nav-link" href="#contact-form" onClick = {() => props.setContactSelected(true) & props.setPortfolioSelected(false)}>
             Contact
           </a>
           <a className="nav-item nav-link" href="#resume">
