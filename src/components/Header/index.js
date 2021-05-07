@@ -1,16 +1,41 @@
-import Nav from "../Nav";
+
 import React from "react";
 
-function Header() {
+function Header(props) {
+  console.log(props.setContactSelected)
   return (
-    <header>
-      <h2>
-        <a href="/">
-          <span>William Felix Hunt</span>
-        </a>
-      </h2>
-      <Nav></Nav>
-    </header>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="/">
+        William Felix Hunt
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div className="navbar-nav">
+          <a className="nav-item nav-link active" href="#about">
+            About Me <span className="sr-only">(current)</span>
+          </a>
+          <a className="nav-item nav-link" href="#my-work">
+            My Work
+          </a>
+          <a className="nav-item nav-link" href="#contact-form" onClick = {() => props.setContactSelected(true)}>
+            Contact
+          </a>
+          <a className="nav-item nav-link" href="#resume">
+            Resume
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 }
 

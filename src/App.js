@@ -1,28 +1,37 @@
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 import "./App.css";
-import { React, useState} from "react";
-import Portfolio from './components/Portfolio'
-import Header from './components/Header'
-import About from './components/About';
-import ContactForm from './components/Contact'
+import { React, useState } from "react";
+import Portfolio from "./components/Portfolio";
+import Header from "./components/Header";
+import About from "./components/About";
+import ContactForm from "./components/Contact";
 
 function App() {
-  return  (
-  <div>
-    <main>
-      <Header></Header>
-      <About></About>
-      <Portfolio></Portfolio>
-      <ContactForm></ContactForm>
-      <Footer></Footer>
-    </main>
-  </div>
+  const [contactSelected, setContactSelected] = useState(false);
+
+  return (
+    <div>
+      <Header
+        setContactSelected={setContactSelected}
+        contactSelected={contactSelected}
+      ></Header>
+      <main>
+        <div className="content-wrap">
+          {!contactSelected ? (
+            <>
+              <Portfolio></Portfolio>
+            </>
+          ) : (
+            <ContactForm></ContactForm>
+          )}
+        </div>
+        <Footer></Footer>
+      </main>
+    </div>
   );
 }
 
 export default App;
-
-
 
 // // GIVEN a single-page application portfolio for a web developer
 // WHEN I load the portfolio

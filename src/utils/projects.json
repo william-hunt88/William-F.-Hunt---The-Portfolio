@@ -2,15 +2,17 @@
     {
       "name": "Advance-it",
       "link": "https://shrouded-beach-19084.herokuapp.com/",
-      "image": "",
+      "image": "p1",
+      "boxNum": "box1",
       "description": "",
       "deployedLink": "",
       "githubLink": ""
     },
     {
-        "name": "Placeholder 1",
+        "name": "Crypto-Stock Wallet",
         "link": "",
-        "image": "",
+        "image": "crypto",
+        "boxNum": "box2",
         "description": "",
         "deployedLink": "",
         "githubLink": ""
@@ -18,7 +20,8 @@
     {
       "name": "Placeholder 2",
       "link": "",
-      "image": "",
+      "image": "p3",
+      "boxNum": "box3",
       "description": "",
       "deployedLink": "",
       "githubLink": ""
@@ -26,7 +29,8 @@
     {
       "name": "Placeholder 3",
       "link": "",
-      "image": "",
+      "image": "p4",
+      "boxNum": "box4",
       "description": "",
       "deployedLink": "",
       "githubLink": ""
@@ -34,7 +38,8 @@
     {
       "name": "Placeholder 4",
       "link": "",
-      "image": "",
+      "image": "p5",
+      "boxNum": "box5",
       "description": "",
       "deployedLink": "",
       "githubLink": ""
@@ -42,7 +47,8 @@
     {
       "name": "Placeholder 5",
       "link": "",
-      "image": "",
+      "image": "p6",
+      "boxNum": "box6",
       "description": "",
       "deployedLink": "",
       "githubLink": ""
