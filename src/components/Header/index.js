@@ -1,8 +1,6 @@
-
-import React from "react";
+import {React, useState} from "react";
 
 function Header(props) {
-  console.log(props.setContactSelected)
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/">
@@ -27,7 +25,7 @@ function Header(props) {
           <a className="nav-item nav-link" href="#my-work" onClick = {() => props.setPortfolioSelected(true) && props.setContactSelected(false)}>
             My Work
           </a>
-          <a className="nav-item nav-link" href="#contact-form" onClick = {() => props.setContactSelected(true)}>
+          <a className="nav-item nav-link" href="#contact-form" onClick = {() => props.setContactSelected(true) && props.setPortfolioSelected(false)}>
             Contact
           </a>
           <a className="nav-item nav-link" href="#resume">

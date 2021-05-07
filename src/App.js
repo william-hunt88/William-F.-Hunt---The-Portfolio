@@ -1,6 +1,6 @@
 import Footer from "./components/Footer";
 import "./App.css";
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -9,7 +9,35 @@ import ContactForm from "./components/Contact";
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false);
+
+  const handleRender = () => {
+    console.log("here")
+    if (portfolioSelected) {
+      return (
+        <div>
+          <Portfolio></Portfolio>
+        </div>
+      );
+    } else if(contactSelected) {
+      return (
+        <div>
+          <ContactForm></ContactForm>
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <About></About>
+        </div>
+      )
+    }
+  };
+
+  useEffect(() => {
+    handleRender()
+    console.log(contactSelected)
+    console.log(portfolioSelected)
+  })
 
   return (
     <div>
@@ -20,19 +48,16 @@ function App() {
       ></Header>
       <main>
         <div className="content-wrap">
-          {!contactSelected ? (
+          {handleRender()}
+          {/* {!contactSelected ? (
             <>
               <div>
-                {portfolioSelected ? (
-                  <Portfolio></Portfolio>
-                ) : (
-                  <About></About>
-                )}
+                <About></About>
               </div>
             </>
           ) : (
             <ContactForm></ContactForm>
-          )}
+          )} */}
         </div>
 
         <Footer></Footer>
