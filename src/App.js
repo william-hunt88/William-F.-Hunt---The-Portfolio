@@ -5,10 +5,12 @@ import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
+import Resume from "./components/Resume"
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false)
 
   const handleRender = () => {
     console.log("here");
@@ -22,6 +24,12 @@ function App() {
       return (
         <div>
           <ContactForm></ContactForm>
+        </div>
+      );
+    } else if (resumeSelected) {
+      return (
+        <div>
+          <Resume></Resume>
         </div>
       );
     } else {
@@ -45,15 +53,13 @@ function App() {
         setContactSelected={setContactSelected}
         contactSelected={contactSelected}
         setPortfolioSelected={setPortfolioSelected}
+        setResumeSelected={setResumeSelected}
       ></Header>
       <main>
-        <div className="content-wrap">
-          {handleRender()}
-        </div>
+        <div className="content-wrap">{handleRender()}</div>
       </main>
       <Footer></Footer>
     </div>
-    
   );
 }
 

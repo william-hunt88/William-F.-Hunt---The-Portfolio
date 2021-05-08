@@ -56,6 +56,14 @@ code {
   background-image: url("./assets/images/box2.jpg");
 }
 
+.box3 {
+  background-image: url("./assets/images/box3.jpg");
+}
+
+.box4 {
+  background-image: url("./assets/images/box4.jpg");
+}
+
 .grid-item:hover {
   opacity: 0.5;
 }

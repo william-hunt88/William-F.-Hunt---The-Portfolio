@@ -3,7 +3,10 @@ import React from 'react'
 function About() {
   return (
     <section id="about" className="about">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>I am a web developer from Nashville, Tn. I also work in live concert production 
+        and am looking forward to picking up new coding projects and jobs to fill my down time. 
+        Thanks for looking!
+      </p>
     </section>
   );
 }

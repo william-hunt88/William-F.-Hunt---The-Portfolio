@@ -1,44 +1,34 @@
 [
     {
       "name": "Advance-it",
-      "link": "https://shrouded-beach-19084.herokuapp.com/",
-      "image": "p1",
       "boxNum": "box1",
       "description": "",
-      "deployedLink": "",
-      "githubLink": ""
+      "deployedLink": "https://shrouded-beach-19084.herokuapp.com/",
+      "githubLink": "https://github.com/william-hunt88/Advance-It-"
     },
     {
         "name": "Crypto-Stock Wallet",
-        "link": "",
-        "image": "crypto",
         "boxNum": "box2",
         "description": "",
-        "deployedLink": "",
-        "githubLink": ""
+        "deployedLink": "https://joelecox1.github.io/crypto-stock-compare/",
+        "githubLink": "https://william-hunt88.github.io/Challenge-2/"
     },
     {
-      "name": "Placeholder 2",
-      "link": "",
-      "image": "p3",
+      "name": "Weather Forecast",
       "boxNum": "box3",
       "description": "",
-      "deployedLink": "",
-      "githubLink": ""
+      "deployedLink": "https://github.com/william-hunt88/weatherApp/settings/pages",
+      "githubLink": "https://github.com/william-hunt88/weatherApp"
     },
     {
-      "name": "Placeholder 3",
-      "link": "",
-      "image": "p4",
+      "name": "Tech Blog",
       "boxNum": "box4",
       "description": "",
-      "deployedLink": "",
-      "githubLink": ""
+      "deployedLink": "https://aqueous-thicket-50128.herokuapp.com/",
+      "githubLink": "https://github.com/william-hunt88/Module14-TechBlog"
     },
     {
       "name": "Placeholder 4",
-      "link": "",
-      "image": "p5",
       "boxNum": "box5",
       "description": "",
       "deployedLink": "",
@@ -46,8 +36,6 @@
     },
     {
       "name": "Placeholder 5",
-      "link": "",
-      "image": "p6",
       "boxNum": "box6",
       "description": "",
       "deployedLink": "",
