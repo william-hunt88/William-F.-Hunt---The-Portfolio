@@ -21,7 +21,7 @@ code {
   width: 100vw;
   display: flex;
   justify-content: center;
-  height: 50px;
+  height: 75px;
 }
 
 .about {
@@ -90,6 +90,20 @@ code {
 
 .content-wrap {
   padding: 25px;
+}
+
+.projName {
+  color: white;
+  opacity:0; /* Completely invisible. */
+  transition:1s;
+}
+
+.projName:hover {
+  opacity:1;
+}
+
+.footer a {
+  margin: 15px;
 }
 
 @media screen and (max-width: 980px) {

@@ -1,8 +1,11 @@
 import React from "react";
 
-function Project(currentProject) {
+function Project({currentProject}) {
+  console.log(currentProject.name)
   return (
-    <div>{currentProject.link}</div>
+    <div className="projWrap">
+      <h2 className="projName">{currentProject.name}</h2>
+    </div>
   );
 }
 
