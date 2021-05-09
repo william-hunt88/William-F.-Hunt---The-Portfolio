@@ -3,6 +3,9 @@ import React from "react";
 function Resume() {
   return (
     <div>
+      <button>
+      <a href="/assets/images/resume(placeholder).pdf" download="">Download</a>
+      </button>
       <h2> Front-End Proficiencies</h2>
       <ul>
         <li>HTML</li>
