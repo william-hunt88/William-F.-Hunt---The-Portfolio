@@ -1,0 +1,10 @@
+.footer a {
+  margin: 25px;
+}
+
+.footer {
+  display: flex;
+  min-width: 100%;
+  justify-content: center;
+  min-height: 50;
+}

@@ -5,12 +5,12 @@ import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
-import Resume from "./components/Resume"
+import Resume from "./components/Resume";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
-  const [resumeSelected, setResumeSelected] = useState(false)
+  const [resumeSelected, setResumeSelected] = useState(false);
 
   const handleRender = () => {
     console.log("here");
@@ -49,12 +49,14 @@ function App() {
 
   return (
     <div>
-      <Header
-        setContactSelected={setContactSelected}
-        contactSelected={contactSelected}
-        setPortfolioSelected={setPortfolioSelected}
-        setResumeSelected={setResumeSelected}
-      ></Header>
+      <header>
+        <Header
+          setContactSelected={setContactSelected}
+          contactSelected={contactSelected}
+          setPortfolioSelected={setPortfolioSelected}
+          setResumeSelected={setResumeSelected}
+        ></Header>
+      </header>
       <main>
         <div className="content-wrap">{handleRender()}</div>
       </main>
