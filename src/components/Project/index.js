@@ -8,13 +8,12 @@ function Project({ currentProject }) {
         <div className="projDeets">
           <h2>
           <a href={currentProject.githubLink}>
-            <i class="bi bi-github"></i>
+            <i className="bi bi-github"></i>
           </a>
           </h2>
-          <h2>{currentProject.name}</h2>
-          <div>
-            <img href={`./assets/images/${currentProject.boxNum}`} alt="alt"></img>
-          </div>
+          <h2>
+          <a href={currentProject.deployedLink}>{currentProject.name}</a>
+          </h2>
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -42,44 +44,89 @@ function ContactForm() {
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
+      <Form id="contact-form" onSubmit={handleSubmit}>
+        <Form.Group>
+          <Form.Label htmlFor="name">Name:</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Enter Name"
             defaultValue={name}
-            onChange={handleChange}
             name="name"
+            onChange={handleChange}
           />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input
+        </Form.Group>
+        <Form.Group>
+          <Form.Label htmlFor="email">Email:</Form.Label>
+          <Form.Control
             type="email"
             name="email"
-            defaultValue={email}
+            placeholder="Enter Email"
+            defaultValue={name}
             onBlur={handleChange}
           />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
+        </Form.Group>
+        <Form.Group>
+          <Form.Label htmlFor="message">Your message here</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows={3}
             name="message"
             defaultValue={message}
             rows="5"
             onBlur={handleChange}
           />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button data-testid="button" type="submit">
+        </Form.Group>
+        <Button variant="primary" type="submit" data-testid="button">
           Submit
-        </button>
-      </form>
+        </Button>
+      </Form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
     </section>
+
+    // <section>
+    //   <h1 data-testid="h1tag">Contact me</h1>
+    //   <form id="contact-form" onSubmit={handleSubmit}>
+    //     <div>
+    //       <label htmlFor="name">Name:</label>
+    //       <input
+    //         type="text"
+    //         defaultValue={name}
+    //         onChange={handleChange}
+    //         name="name"
+    //       />
+    //     </div>
+    //     <div>
+    //       <label htmlFor="email">Email address:</label>
+    //       <input
+    //         type="email"
+    //         name="email"
+    //         defaultValue={email}
+    //         onBlur={handleChange}
+    //       />
+    //     </div>
+    //     <div>
+    //       <label htmlFor="message">Message:</label>
+    //       <textarea
+    //         name="message"
+    //         defaultValue={message}
+    //         rows="5"
+    //         onBlur={handleChange}
+    //       />
+    //     </div>
+    //     {errorMessage && (
+    //       <div>
+    //         <p className="error-text">{errorMessage}</p>
+    //       </div>
+    //     )}
+    //     <button data-testid="button" type="submit">
+    //       Submit
+    //     </button>
+    //   </form>
+    // </section>
   );
 }
 

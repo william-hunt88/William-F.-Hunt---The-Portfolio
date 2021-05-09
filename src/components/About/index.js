@@ -1,14 +1,24 @@
 import React from 'react'
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 function About() {
   return (
-    <section id="about" className="about">
-      <img href="./assets/images/me.jpg"></img>
-      <p>I am a web developer from Nashville, Tn. I also work in live concert production 
-        and am looking forward to picking up new coding projects and jobs to fill my down time. 
-        Thanks for looking!
+    <Container id="about" className="about">
+      <Row>
+        <Col md={12}>
+        <img src='/assets/images/me.jpg' alt="alt"/>
+        </Col>
+        <Col md={12}>
+        <p>I am a web developer from Nashville, Tn. Here comes some Lorem ipsum 
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+          ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in 
+          voluptate velit esse cillum dolore eu fugiat to round it out.
       </p>
-    </section>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

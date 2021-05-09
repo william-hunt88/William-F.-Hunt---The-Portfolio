@@ -5,8 +5,17 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Header(props) {
   return (
-    <Navbar bg="light" expand="lg" className="nav">
-      <Navbar.Brand href="#home">William Felix Hunt</Navbar.Brand>
+    <Navbar expand="lg" className="nav">
+      <Navbar.Brand
+        href="#about"
+        onClick={() =>
+          props.setPortfolioSelected(false) &
+          props.setContactSelected(false) &
+          props.setResumeSelected(false)
+        }
+      >
+        William Felix Hunt
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
