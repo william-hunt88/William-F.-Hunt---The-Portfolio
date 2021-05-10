@@ -8,7 +8,7 @@ function About() {
     <Container id="about" className="about">
       <Row>
         <Col md={12}>
-        <img src='https://imgur.com/tEgInoB' alt="alt"/>
+        <img src="me.jpg" alt="alt"/>
         </Col>
         <Col md={12}>
         <p>I am a web developer from Nashville, Tn. Here comes some Lorem ipsum 
