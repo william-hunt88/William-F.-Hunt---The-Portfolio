@@ -2,13 +2,14 @@ import React from 'react'
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import photo from "./me.jpg"
 
 function About() {
   return (
     <Container id="about" className="about">
       <Row>
         <Col md={12}>
-        <img src="me.jpg" alt="alt"/>
+        <img src={photo} alt="alt"/>
         </Col>
         <Col md={12}>
         <p>I am a web developer from Nashville, Tn. Here comes some Lorem ipsum 
