@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "react-bootstrap/Button"
+import download from "./resume(placeholder).pdf"
 
 function Resume() {
   return (
     <div>
-      <Button size = "lg" href="/assets/images/resume(placeholder).pdf" download="WilliamFelixHunt - Resume2021">
+      <Button size = "lg" href={download} download="WilliamFelixHunt - Resume2021">
       Download
       </Button>
       <h2> Front-End Proficiencies</h2>

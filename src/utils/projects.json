@@ -1,11 +1,11 @@
 [
-    {
-      "name": "Advance-it",
-      "boxNum": "box1",
-      "description": "",
-      "deployedLink": "https://shrouded-beach-19084.herokuapp.com/",
-      "githubLink": "https://github.com/william-hunt88/Advance-It-"
-    },
+  {
+    "name": "Haul-That",
+    "boxNum": "box1",
+    "description": "",
+    "deployedLink": "https://haul-that.herokuapp.com/",
+    "githubLink": "https://github.com/alehr45/haul-that"
+  },
     {
         "name": "Crypto-Stock Wallet",
         "boxNum": "box2",
@@ -19,6 +19,13 @@
       "description": "",
       "deployedLink": "https://github.com/william-hunt88/weatherApp",
       "githubLink": "https://github.com/william-hunt88/weatherApp/settings/pages"
+    },
+    {
+      "name": "Advance-it",
+      "boxNum": "box1",
+      "description": "",
+      "deployedLink": "https://shrouded-beach-19084.herokuapp.com/",
+      "githubLink": "https://github.com/william-hunt88/Advance-It-"
     },
     {
       "name": "Tech Blog",
